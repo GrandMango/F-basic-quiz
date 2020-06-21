@@ -1,9 +1,10 @@
 @import "variables";
 @import "mixins";
 @import "reboot";
+@import "briefInfo";
 
 p {
-  font-family: "Times New Roman";
+  font-family: "Cursive";
 }
 
 body {
@@ -17,37 +18,6 @@ article {
   padding-right: $padding-both-size;
   margin: $margin-top-size;
   padding-top: 0px;
-}
-
-.brief_info {
-  text-align: center;
-  padding-bottom: $padding-bottom;
-  border-bottom: $gray-light solid 2px;
-  p {
-    display: inline;
-    font-weight: bold;
-    font-family: "Open Sans";
-  }
-
-  .container {
-    margin-bottom: $small-marigin-bottom;
-  }
-
-  strong {
-    display: block;
-    margin-bottom: $small-marigin-bottom;
-  }
-}
-
-img {
-  border: 1px;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  width: $image-size;
-  height1: $image-size;
-  max-width: $image-size;
-  max-height: $image-size;
-  margin-top: -50px;
 }
 
 .primary_strong {

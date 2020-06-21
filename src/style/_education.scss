@@ -1,0 +1,37 @@
+.education {
+  h4 {
+    margin-bottom: 0px;
+  }
+
+  table {
+    border: none;
+    //border-collapse: separate;
+    border-spacing: 0px 15px;
+    td {
+      border: none;
+      padding: 15px 10px;
+    }
+
+    strong {
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    td:first-child {
+      width: 150px;
+      padding: 5px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    td:nth-child(2) {
+      width: 100vmax;
+      background-color: $gray-light;
+    }
+  }
+}

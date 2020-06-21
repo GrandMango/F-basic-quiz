@@ -1,5 +1,5 @@
 import "./style/index.scss";
-import { getUserInfo } from "./requestAPI";
+import { getUserInfo, getUserEducationInfo } from "./requestAPI";
 
 const url = window.location.href;
 const id = url.split("users/")[1];
@@ -12,4 +12,16 @@ const fulfillBriefIntroHtml = async () => {
   document.getElementById("description").innerText = user.description;
 };
 
+const fulfillEducationTable = async () => {
+  const education = await getUserEducationInfo(id);
+  const table = document.getElementById("education_table");
+  education.forEach((obj) => {
+    table.innerHTML +=
+      `<tr><td>${obj.year}</td>` +
+      `<td><strong>${obj.title}</strong>` +
+      `<p>${obj.description}</p></td></tr>`;
+  });
+};
+
 fulfillBriefIntroHtml();
+fulfillEducationTable();

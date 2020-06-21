@@ -14,6 +14,18 @@ const fulfillBriefIntroHtml = async () => {
 
 const fulfillEducationTable = async () => {
   const education = await getUserEducationInfo(id);
+
+  const compare = function (obj1, obj2) {
+    if (obj1.year < obj2.year) {
+      return -1;
+    }
+    if (obj1.year > obj2.year) {
+      return 1;
+    }
+    return 0;
+  };
+  education.sort(compare);
+
   const table = document.getElementById("education_table");
   education.forEach((obj) => {
     table.innerHTML +=

@@ -7,6 +7,7 @@ $gray-light: #f8f9fa !default;
 $gray: #6c757d !default;
 $gray-dark: #343a40 !default;
 $black: #000 !default;
+$background-color: #e8e9e8;
 
 $primary-color: #e55b50 !default;
 $body-bg: #e8e9e8 !default;
@@ -15,3 +16,8 @@ $link-color: $gray-dark !default;
 $link-hover-color: lighten($link-color, 15%) !default;
 
 $image-size: 100px;
+$margin-top-size: 100px;
+$padding-top-size: 10px;
+$padding-both-size: 50px;
+$small-marigin-bottom: 10px;
+$padding-bottom: 20px;
